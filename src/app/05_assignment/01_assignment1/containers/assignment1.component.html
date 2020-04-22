@@ -7,7 +7,15 @@
     <li class="list-group-item">Create handler in the component's class</li>
     <li class="list-group-item">Display the result on the page via string interpolation</li>
   </ul>
-  <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+  <div class="container your code" >
+    
+        <span class="input-group-text">Text</span>
+    
+    <input #inpBox class ="textBox" type="text" placeholder="Enter your text" (input)="updateChange(inpBox.value)">
+    <p>{{value}}</p>
+    
+  
+    
+    
   </div>
 </div>

@@ -1,4 +1,16 @@
-.your-code {
+.container {
   margin-top: 40px;
   border: 2px solid darkmagenta;
+}
+
+.input-group-text{
+ width:70px;
+ margin-top: 20px;
+ background-color: brown;
+ color: cornsilk;
+}
+.textBox{
+  width: 250px;
+  margin-left: 120px;
+ 
 }

@@ -1,8 +1,17 @@
 .your-code {
   margin-top: 40px;
   border: 2px solid darkmagenta;
+  display: flex;
+  justify-content: center;
+
+
 }
 
 .active {
-  background-color: #0c5460;
+  background-color:cyan;
+}
+
+.tr{
+  margin: 20px;
+  border : 2px solid black;
 }

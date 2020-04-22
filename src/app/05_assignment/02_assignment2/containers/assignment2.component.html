@@ -1,3 +1,5 @@
+
+
 <div class="assignment1">
   <div class="alert alert-info">Follow the steps:</div>
   <ul class="list-group">
@@ -7,6 +9,22 @@
     <li class="list-group-item">Apply the "active" class to the row when user clicks on it</li>
   </ul>
   <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+    <table cellpadding="20" cellspacing="20" width="1200">
+      <tr class="tr">
+        <th>ID</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Completed</th>
+      </tr>
+      <tr  [ngClass]="{'active': selectedItem == item}" (click)="itemClick($event, item)" *ngFor='let item of todos' class="tr" >
+         <td>{{item.id}}</td>
+         <td>{{item.type}}</td>
+         <td>{{item.description}}</td>
+         <td>{{item.completed}}</td>      
+      </tr>
+         
+      
+      </table>
+    
   </div>
 </div>
